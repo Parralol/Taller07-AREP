@@ -17,7 +17,7 @@ public class WebPage {
     }
 
     private static int getPort() {
-        return 6000;
+        return 4567;
     }
 
 }

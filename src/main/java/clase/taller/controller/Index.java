@@ -24,21 +24,21 @@ public final class Index {
             prepareAdmon();
         } catch (Exception e) {
             // TODO Auto-generated catch block
-            e.printStackTrace();
+            System.out.println(e.getMessage());;
         }
         port(getPort());
         staticFiles.location("/static");
         secure("certificados/ecikeystore.p12", "123456", null, null); 
 
         post("/logs", (req, res) -> {
-            String username = req.queryParams("username");
+            String username = req.queryParams("name");
             String password = req.queryParams("password");
 
             if (users.containsKey(username) && users.get(username).getPassword().equals(Hash.sha1(password))) {
                 Session session = req.session(true);
                 session.attribute("username", username);
-                check( "certificates/myTrustStore", "123456");
-                res.redirect("https://localhost:6000/dashboard");
+                check( "certificados/myTrustStore", "123456");
+                res.redirect("https://localhost:4567/dashboard");
                 return null;
             }
 
