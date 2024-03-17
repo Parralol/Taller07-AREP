@@ -14,7 +14,7 @@ import javax.net.ssl.TrustManagerFactory;
 
 public class URLReader {
 
-    public void check(String path, String psswd) {
+    public static void check(String path, String psswd) {
         
         try {
             // Create a file and a password representation
