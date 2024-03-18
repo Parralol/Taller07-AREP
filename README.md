@@ -48,19 +48,33 @@ Construccion de un servicio web seguro por medio de HTTPS
 
   Podemos observar la ejecucion de los mains desde diferentes consolas en la misma instancia
 
+Como se puede observar en el apartado de *VIDEO DE PRUEBA*
 
+el nombre de usuario es _admin_
 
-https://github.com/Parralol/Taller07-AREP/assets/110953563/87517bf2-661c-4e12-ae66-19c00f40f649
-
-
+la contraseña es _password_
 
 ## Ejecución de test
 
+    mvn test
+
 ## Arquitectura del proyecto
+
+  ![image](https://github.com/Parralol/Taller07-AREP/assets/110953563/480f3051-2197-4d71-8d46-c6dfe047cc51)
+
+  Desde un bowser cualquiera se conecta por medio de https a un servidor fachada que nos permitira enviar la informacion necesaria (username & password) para poder acceder al segundo servidor, el cual podra entabla una comunicacion por medio de HTTPS de POST-GET, cada servidor possera un servicio por medio de spark, que estara escrito en java, ambos usando certificados y las llaves de los respectivos.
 
 ### ¿Como escalaría su arquitectura de seguridad para incorporar nuevos servicios?
 
+  Al usar principios SOLID al priorizar la responsabilidad unica, modularizacion y tener baja cohesion, ademas de que el codigo posee valores para variables editables a gusto de uso de quien necesite, ademas de poseer los certificados en una carpeta, permitiendo la personalizacion y escalabilidad de la arquitectura.
+
 ## Video de prueba
+
+  https://github.com/Parralol/Taller07-AREP/assets/110953563/87517bf2-661c-4e12-ae66-19c00f40f649
 
 ## Constuido con
 
+* HTML
+* Java
+* AWS
+* keytools
