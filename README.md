@@ -48,11 +48,31 @@ Construccion de un servicio web seguro por medio de HTTPS
 
   Podemos observar la ejecucion de los mains desde diferentes consolas en la misma instancia
 
-Como se puede observar en el apartado de *VIDEO DE PRUEBA*
+_*Los siguientes pantallazos se han realizado en la maquina local*_
+
+primero nos conectamos a https://localhost:5000
+
+![image](https://github.com/Parralol/Taller07-AREP/assets/110953563/6ac4fa2a-c3d6-495f-acdb-dce0a79d3b5b)
+
+Si le damos enviar recibiremos la siguiente mensaje
+
+![image](https://github.com/Parralol/Taller07-AREP/assets/110953563/119bf180-71d6-47cc-a541-a710f50718bd)
+
+si cambiamos el user a *admin* obtendremos lo siguiente
+
+![image](https://github.com/Parralol/Taller07-AREP/assets/110953563/c89cdde6-b927-4615-a2c3-d60895319ddc)
+
+
+como podemos ver ingresamos correctamente
+
+![image](https://github.com/Parralol/Taller07-AREP/assets/110953563/e3ec8805-9dbe-4b1f-af2c-29c4e92267f6)
 
 el nombre de usuario es _admin_
 
 la contraseña es _password_
+
+
+Como se puede observar en el apartado de *VIDEO DE PRUEBA*
 
 ## Ejecución de test
 
