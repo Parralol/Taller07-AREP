@@ -25,22 +25,33 @@ Construccion de un servicio web seguro por medio de HTTPS
 
   Despues es necesario clonar el repositorio
 
-    sudo git clone 
+    sudo git clone https://github.com/Parralol/Taller07-AREP.git
     
   A la hora de instalar el programa es necesario ejecutar:
 
-    mvn clean install
+    sudo mvn clean install
 
-    mvn compile
+    sudo mvn compile
 
-    mvn verify
+    sudo mvn verify
 
 
 ## Ejecución
 
-    mvn exec:java -Dexec.mainClass="clase.taller.controller.Index"
+  Bajo la misma instancia vamos a ejecutar ambos mains
+
+    sudo mvn exec:java -Dexec.mainClass="clase.taller.controller.Index"
     
-    mvn exec:java -Dexec.mainClass="clase.taller.controller.WebPage"
+    sudo mvn exec:java -Dexec.mainClass="clase.taller.controller.WebPage"
+
+![image](https://github.com/Parralol/Taller07-AREP/assets/110953563/5f4ddde8-f187-4689-80e3-e5800742e792)
+
+  Podemos observar la ejecucion de los mains desde diferentes consolas en la misma instancia
+
+
+
+https://github.com/Parralol/Taller07-AREP/assets/110953563/87517bf2-661c-4e12-ae66-19c00f40f649
+
 
 
 ## Ejecución de test
