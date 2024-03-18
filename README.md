@@ -74,7 +74,12 @@ la contraseña es _password_
 
 ## Constuido con
 
-* HTML
-* Java
-* AWS
-* keytools
+* HTML: Lenguaje de marcado de hipertexto.
+  
+* Java: Lenguaje de programacion de alto nivel
+  
+* AWS: Servicios amazon para despliegue de aplicaciones. (EC2)
+  
+* keytools: Programa para generar certificados y sus respectivas llaves.
+
+
